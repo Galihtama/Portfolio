@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "inika", serif;
+}
+
+body {
+    max-width:1349px;
+    width: 100%;
+    height: 100vmax;
+    border: 0;
+    border-style: 0;
+    margin-top: 0;
+}
+
+.container {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    border: 0cm;
+    display: flex;
+    margin-top: 0;
+}
+
+.pembungkus {
+    height: auto;
+    background-color: transparent;
+    margin-left: 45px;
+    margin-top: 80px;
+}
+
+.hteks {
+    font-size: 65px;
+    color: #07F0FF;
+    text-align: center;
+    font-weight: 700;
+}
+
+.lrpl {
+    background: url(ijo.jpg);
+    background-size: 355px 469px;
+    width: 355px;
+    height: 469px;
+    box-sizing: border-box;
+    margin-left: 448px;
+    margin-top: 20px;
+}
+
+.mdipelajari {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.teks {
+    width: 1257px;
+    height: 1200px;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: white;
+    margin-top: 40px;
+}
+
+.tool {
+    margin-left: 71px;
+}
+
+.ygdibuat {
+    margin-left: 71px;
+}
+
+.figma {
+    margin-left: 46px;
+}
+
+.ftool {
+    margin-left: 71px;
+}
+
+.Taplikasi {
+    margin-left: 71px;
+}
+
+.berupa {
+    margin-left: 71px;
+}
+
+.html {
+    margin-left: 70px;
+}
+
+.css {
+    margin-left: 48px;
+
+}
+
+.and {
+    margin-left: 70px;
+}
+
+.htss {
+    margin-left: 48px;
+
+}
+
+.box {
+    margin-left: 70px;
+}
+
+.back {
+    border-radius: 10px;
+    width: 243px;
+    height: 73px;
+    margin-left: 510px;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+.back a{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 243px;
+    height: 73px;
+    background-color: #636265;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* awal media query */
+
+/* mobile phone */
+@media screen and (max-width:464px) {
+    body {
+        width: 100%;
+        height: auto;
+        border: 0;
+        border-style: 0;
+        margin-top: 0;
+    }
+    
+    .container {
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        border: 0cm;
+        display: block;
+        margin-top: 0px;
+        position: absolute;
+    }
+    
+    .pembungkus {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-left: 0px;
+        margin-top: 2rem;
+        display: block;
+    }
+    
+    .hteks {
+        font-size: 25px;
+        color: #07F0FF;
+        text-align: center;
+        font-weight: 700;
+    }
+    
+    .lrpl {
+        background: url(ijo.jpg);
+        background-size: auto 100%;
+        width: 130px;
+        height: 169px;
+        box-sizing: border-box;
+        margin-left: 32%;
+        margin-top: 10px;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mdipelajari {
+        font-size: 10px;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .teks {
+        width: 85%;
+        height: auto;
+        background-color: transparent;
+        box-sizing: border-box;
+        font-size: 10px;
+        color: white;
+        margin-top: 40px;
+        margin-left: 6%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tool {
+        margin-left: 18px;
+    }
+    
+    .ygdibuat {
+        margin-left: 18px;
+    }
+    
+    .figma {
+        margin-left: 12px;
+    }
+    
+    .ftool {
+        margin-left: 18px;
+    }
+    
+    .Taplikasi {
+        margin-left: 18px;
+    }
+    
+    .berupa {
+        margin-left: 18px;
+    }
+    
+    .html {
+        margin-left: 18px;
+    }
+    
+    .css {
+        margin-left: 12px;
+    
+    }
+    
+    .and {
+        margin-left: 18px;
+    }
+    
+    .htss {
+        margin-left: 12px;
+    
+    }
+    
+    .box {
+        margin-left: 18px;
+    }
+    
+    .back {
+        border-radius: 4px;
+        width: 10%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 42%;
+        margin-top: 0px;
+        padding: 3rem 0rem;
+        cursor: pointer;
+    }
+    
+    .back a{
+        text-decoration: none;
+    }
+    
+    button {
+        justify-content: center;
+        align-items: center;
+        display: block;
+        width: 53px;
+        height: 23px;
+        background-color: #636265;
+        border-radius: 4px;
+        color: white;
+        font-size: 10px;
+        cursor: pointer;
+    }
+}
+/* akhir media query */

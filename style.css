@@ -1,0 +1,1295 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "inika" , serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'inika', serif;
+    background-color: black;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+/* Navbar */
+
+nav {
+    max-width: 1379px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.514) ;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: #07F0FF;
+    height: 50px;
+    align-items: center;
+    font-size: 1.3em;  
+    /* margin-left: 50px; */
+    box-sizing: border-box;
+    position: fixed;
+}
+
+nav .logo {
+    letter-spacing: 3px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+    transform: translateX(0);
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    color: rgb(223, 223, 253);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 29px;
+    left: -5.5px;
+    top: -4px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 2.5px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animasi */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-0.5px , 0px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+.Container {
+    max-width: 1349px;
+    width: 100%;
+    height: 2992px;
+    background-position: center;
+    background-size: cover;
+    border: 0cm;
+    background-color: black;
+}
+
+
+
+.home {
+    padding-left: 20px;
+    width: 100%;
+    height: 643px;
+    display: flex;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.frame1 {
+    width: 1255px;
+    height: 416px;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-left: 40px;
+    background-color: transparent;
+}
+
+.des {
+    background-color: transparent;
+    justify-content: right;
+    width: 743px;
+    height: 416px;
+}
+
+.hello {
+    font-size: 60px;
+    color: #07F0FF;
+    font-weight: 700;
+    background-color: transparent;
+    display: flex;
+    margin-top: 35px;
+}
+
+.student {
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    margin-top: 40px;
+    background-color: transparent;
+    display: flex;
+}
+
+.student b {
+    color: #FF0707;
+    padding-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.lokhp {
+    background-color: transparent;
+    width: 743px;
+    height: 53px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 110px;
+}
+.lokasi {
+    width: 475px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.lokasi a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+.hp {
+    width: 150px;
+    display: flex;
+    align-items: end;
+    background-color: transparent;
+    padding-right: 90px;
+}
+
+.hp img {
+    width: 28.89px;
+    height: 53px;
+    border-radius: 5px;
+}
+
+.hp a {
+    font-family: "inter" , sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+
+.garis {
+    width: 668px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.ku {
+    width: 339px;
+    height: 416px;
+    display: flex;
+    margin-left: 155px;
+    align-items: center;
+
+}
+
+.about {
+    background: transparent;
+    height: 612px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 0;
+    border-width: 0;
+}
+
+.frame2 {
+    width: 1200px;
+    height: 459px;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-left: 60px;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.saya {
+    border-radius: 10px;
+    width: 316px;
+    height: 459px;
+    box-sizing: border-box;
+    
+}
+
+.saya img {
+    width: 316px;
+    height: 459px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.deskripsi {
+    width: 750px;
+    height: 459px;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.heading {
+    font-size: 55px;
+    color: rgb(131, 77, 7);
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 700;
+}
+
+.heading span {
+    color: rgba(184, 152, 11, 0.849);
+}
+
+.deksingkat {
+    color: white;
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.pengenalan {
+    font-size: 36px;
+    color: white;
+
+}
+
+.name {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.gal {
+    margin-left: 221px;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+.ttl {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.pkl {
+    margin-left: 21px;
+}
+.kelas {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.class {
+    margin-left: 222px;
+    display: flex;
+    
+}
+
+.hoby {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.sng {
+    margin-left: 213px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.education {
+    width: 100%;
+    height: 568px;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 0;
+    padding: 0;
+}
+
+.frame3 {
+    width: 1200px;
+    height: 459px;
+    box-sizing: border-box;
+    margin-top: 55px;
+    margin-left: 75px;
+    background-color: transparent;
+}
+
+.educa {
+    width: 1200px;
+    height: 65px;
+    font-size: 65px;
+    color: #07F0FF;
+    font-weight: 700;
+    background-color: transparent;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.list {
+    height: 300px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.list ul {
+    list-style-type: square;
+    font-size: 40px;
+    color: white;
+}
+
+.experience {
+    border: 0;
+    width: 100%;
+    height: 660px;
+    background-color: transparent;
+    display: flex;
+
+}
+
+.frame4 {
+    width: 1189px;
+    height: 536px;
+    background-color: transparent;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.jud {
+    font-size: 65px;
+    font-weight: 700;
+    align-items: center;
+    background-color: transparent;
+    height: 65px;
+    width: 1189px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #07F0FF;
+}
+
+.jud a {
+    color: white;
+    padding-left: 10px;
+}
+
+.jud span {
+    padding-left: 10px;
+    color: #FF0707;
+}
+
+.duafoto {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.software a{
+    display: block;
+    text-decoration: none;
+    font-size: 55px;
+    padding: 30px 100px;
+    font-weight: 700;
+    color: white;
+}
+
+.pramuka a{
+    display: block;
+    text-decoration: none;
+    font-size: 55px;
+    padding: 30px 100px;
+    font-weight: 700;
+    color: white;
+}
+.contact {
+    background-color: transparent;
+    box-sizing: border-box;
+    height: 507px;
+    margin-top: 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.frame5 {
+    width: 905px;
+    height: 428px;
+    background-color: transparent;
+    margin-top: 60px;
+    margin-left: 120px;
+}
+
+.tebal {
+    color: #07F0FF;
+    font-size: 65px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: baseline;
+    margin-top: 40px;
+
+}
+
+.bcontact {
+    background: transparent;
+    box-sizing: border-box;
+    width: 905px;
+    height: 228px;
+    margin-top: 70px;
+    
+}
+
+.igfb {
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+    font-family: "inter" , sans-serif;
+    background-color: transparent;
+}
+
+.ig {
+    height: 66px;
+    display: flex;
+    align-items: center;
+
+}
+
+.ig img {
+    display: flex;
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+}
+
+.ig a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: "inter", sans-serif;
+    margin-left: 15px;
+}
+
+.fb {
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 60px;
+}
+
+.fb img {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+}
+
+.fb a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: "inter", sans-serif;
+    margin-left: 15px;
+}
+
+.wayt {
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.wa {
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+
+.wa img {
+    display: flex;
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+}
+
+.wa a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: "inter", sans-serif;
+    margin-left: 15px;
+}
+
+.yt {
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 60px;
+}
+
+.yt img {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+    margin-right: 17px;
+}
+
+.yt a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: "inter", sans-serif;
+    margin-right: 90px;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: rgba(201, 138, 13, 0.747);
+    text-align: center;
+    padding:  1.3rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+
+
+footer .links a {
+    color: white;
+    padding: 2rem 1rem;
+    text-decoration: none; 
+    font-size: 1.2rem;
+}
+
+footer .links a:hover {
+    color: black;
+}
+
+footer .card {
+   margin-top: 1rem;
+   font-size: 0.8rem;
+}
+
+footer .card  a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+
+/* media query */
+
+/* mobile phone */
+@media screen and (max-width:464px) {
+    html {
+        width: 100vmin;
+        border-color: blue;
+    }
+    body {
+        width: 100%;
+        background-color: #FF0707;
+    }
+
+    .menu-toggle.active {
+        display: block;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav {
+        width: 381px;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.514) ;
+        /* padding: 20px 0; */
+        color: rgb(96, 172, 235);
+        height: 50px;
+        /* align-items: center; */
+        font-size: 1.3em;  
+        /* margin-left: 50px; */
+        box-sizing: border-box;
+        position: fixed;
+    }
+
+    nav .logo {
+        margin-left: 0px;
+        right: 0;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 30vh;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: left;
+        flex-direction: column;
+        background-color: rgb(158, 99, 10);
+        margin-top: 50px;
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    
+    nav ul li {
+        right: -100%;
+        margin-left: 0;
+
+    }
+
+    nav ul li:hover {
+        background-color: rgba(167, 132, 19, 0.363);
+    }
+
+    nav ul li a {
+        margin-left: 20px;
+    }
+    
+    nav ul li a:hover {
+        color: rgb(48, 36, 10);
+    }
+
+    nav ul.slide.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    /* awal mula home */
+
+    .Container {
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        border: 0cm;
+        background-color: black;
+    }
+    
+    
+    
+    .home {
+        padding-left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        box-sizing: border-box;
+        background: transparent;
+    }
+    
+    .frame1 {
+        width: 100%;
+        height: auto;
+        display: block;
+        box-sizing: border-box;
+        margin-top: 0;
+        margin-left: 40px;
+        background-color: transparent;
+    }
+    
+    .des {
+        background-color: transparent;
+        justify-content: right;
+        width: 100%;
+        height: auto;
+    }
+    
+    .hello {
+        font-size: 25px;
+        color: #07F0FF;
+        font-weight: 700;
+        background-color: transparent;
+        display: block;
+        margin-top: 65px;
+    }
+    
+    .student {
+        font-size: 25px;
+        color: white;
+        font-weight: 700;
+        margin-top: 30px;
+        background-color: transparent;
+        display: flexbox;
+    }
+    
+    .student b {
+        color: #FF0707;
+        padding-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    .lokhp {
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        justify-content: left;
+        align-items: center;
+        display: block;
+        margin-top: 40px;
+    }
+    .lokasi {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: transparent;
+        display: block;
+        justify-content: space-between;
+    }
+    
+    .lokasi a {
+        text-decoration: none;
+        color: white;
+        margin-left: 0;
+        font-size: 9px;
+    }
+
+    .lokasi img {
+        width: 20.10px;
+        height: 25px;
+        border-radius: 5px;
+    }
+    .hp {
+        width: 100%;
+        display: block;
+        align-items: end;
+        background-color: transparent;
+        padding-right: 0;
+        margin-top: 10px;
+    }
+    
+    .hp img {
+        width: 20.10px;
+        height: 33px;
+        border-radius: 5px;
+    }
+    
+    .hp a {
+        font-family: "inter" , sans-serif;
+        color: white;
+        margin-left: 4px;
+        font-size: 9px;
+        justify-content: end;
+        align-items: end;
+    }
+    
+    .garis {
+        width: 80%;
+        height: 2px;
+        margin-top: 10px;
+        background-color: white;
+    }
+    
+    .ku {
+        width: 239px;
+        height: 226px;
+        display: block;
+        align-items: center;
+        padding-top: 30px;
+        margin-left: 0;
+    }
+
+    .ku img {
+        width: 239px;
+        height: 266px;
+    }
+    
+    /* akhir home */
+
+    /* awal about  */
+    .about {
+        background: transparent;
+        height: auto;
+        box-sizing: border-box;
+        display: block;
+        margin-top: 0;
+        border-width: 0;
+    }
+    
+    .frame2 {
+        width: 70%;
+        height: auto;
+        display: block;
+        box-sizing: border-box;
+        margin-top: 0;
+        margin-left: 40px;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+    
+    .saya {
+        border-radius: 10px;
+        width: 239px;
+        height: 296px;
+        box-sizing: border-box;
+        display: block;
+        align-items: center;
+        padding-top: 18px;
+        margin-left: 0px;
+    }
+    
+    .saya img {
+        width: 239px;
+        height: 296px;
+        box-sizing: border-box;
+        display: block;
+        align-items: center;
+        padding-top: 18px;
+        margin-left: 0px;
+    }
+    
+    .deskripsi {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        box-sizing: border-box;
+        font-weight: 500;
+    }
+
+    .heading {
+        width: 100%;
+        font-size: 30px;
+        color: #07F0FF;
+        padding-top: 30px;
+        text-align: center;
+    }
+    
+    .heading span {
+        color: #FF0707;
+    }
+    
+    .deksingkat {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    
+    .pengenalan {
+        width: 100%;
+        font-size: 20px;
+        color: white;
+        margin-top: 0;
+    }
+    
+    .name {
+        display: flex;
+        box-sizing: border-box;
+        
+    }
+    
+    .gal {
+        margin-left: 45px;
+        display: flex;
+        box-sizing: border-box;
+        
+    }
+    
+    .ttl {
+        display: flex;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .pkl {
+        margin-left: 0px;
+        padding-left: 0;
+    }
+
+    .pkl span {
+        margin-left: 10px;
+    }
+    
+    .kelas {
+        display: flex;
+        box-sizing: border-box;
+    }
+    
+    .class {
+        margin-left: 46px;
+        display: flex;
+        
+    }
+    
+    .hoby {
+        display: flex;
+        box-sizing: border-box;
+    }
+    
+    .sng {
+        margin-left: 41px;
+        display: flex;
+        box-sizing: border-box;
+    }
+    
+    /* akhir about */
+
+    /* awal education */
+    .education {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        box-sizing: border-box;
+        display: flex;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    .frame3 {
+        width: 70%;
+        height: auto;
+        padding-top: 0px;
+        margin-left: 49px;
+        box-sizing: border-box;
+        background-color: transparent;
+
+    }
+    
+    .educa {
+        width: 200px;
+        height: auto;
+        font-size: 30px;
+        color: #07F0FF;
+        font-weight: 700;
+        background-color: transparent;
+        display: block;
+        box-sizing: border-box;
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    
+    .list {
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        display: block;
+        margin-top: 20px;
+        /* padding-left: 40px; */
+    }
+    
+    .list ul {
+        list-style-type: square;
+        font-size: 15px;
+        color: white;
+    }
+    
+    /* akhir education */
+
+    /* awal experience */
+    .experience {
+        border: 0;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        display: block;
+    }
+    
+    .frame4 {
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    
+    .jud {
+        max-width: 320px;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 700;
+        align-items: center;
+        background-color: transparent;
+        height: auto;
+        display: flex;
+        margin-top: 0px;
+        color: #07F0FF;
+    }
+    
+    .jud a {
+        color: white;
+        padding-left: 10px;
+    }
+    
+    .jud span {
+        padding-left: 10px;
+        color: #FF0707;
+    }
+    
+    .duafoto {
+        display: block;
+        justify-content: space-between;
+        padding-top: 0px;
+    }
+    
+    .software a{
+        max-width: 320px;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 10px 0px;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+    }
+
+    .software img {
+        width: 300px;
+        height: 150px;
+        padding-left: 10px;
+    }
+    
+    .pramuka a{
+        max-width: 320px;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 10px 0px;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+    }
+
+    .pramuka img {
+        width: 300px;
+        height: 150px;
+        padding-left: 10px;
+    }
+    
+    /* akhir experience */
+
+    /* awal contact */
+    .contact {
+        background-color: transparent;
+        box-sizing: border-box;
+        height: auto;
+        margin-top: 0;
+        display: block;
+        box-sizing: border-box;
+    }
+    
+    .frame5 {
+        width: 70%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .tebal {
+        max-width: 320px;
+        width: 100%;
+        color: #07F0FF;
+        font-size: 35px;
+        font-weight: 700;
+        align-items: center;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+    
+    .bcontact {
+        background: transparent;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        
+    }
+    
+    .igfb {
+        max-width: 320px;
+        width: 100%;
+        padding-left: 10px;
+        display: block;
+        box-sizing: border-box;
+        font-family: "inter" , sans-serif;
+        background-color: transparent;
+
+    }
+    
+    .ig {
+        height: auto;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .ig img {
+        display: flex;
+        background-size: 34px 34px;
+        width: 34px;
+        height: 34px;
+    }
+    
+    .ig a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: "inter", sans-serif;
+        margin-left: 10px;
+    }
+    
+    .fb {
+        align-items: center;
+        display: flex;
+        box-sizing: border-box;
+        margin-right: 60px;
+        margin-top: 20px;
+    }
+    
+    .fb img {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background-size: 34px 34px;
+        width: 34px;
+        height: 34px;
+    }
+    
+    .fb a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: "inter", sans-serif;
+        margin-left: 10px;
+    }
+    
+    .wayt {
+        display: block;
+        box-sizing: border-box;
+        background-color: transparent;
+        margin-top: 15px;
+        padding-left: 10px;
+    }
+    
+    .wa {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .wa img {
+        display: flex;
+        background-size: 34px 34px;
+        width: 34px;
+        height: 34px;
+    }
+    
+    .wa a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: "inter", sans-serif;
+        margin-left: 10px;
+    }
+    
+    .yt {
+        align-items: center;
+        display: flex;
+        box-sizing: border-box;
+        margin-right: 0px;
+        padding-top: 15px;
+    }
+    
+    .yt img {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background-size: 34px 34px;
+        width: 34px;
+        height: 34px;
+        margin-right: 10px;
+    }
+    
+    .yt a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: "inter", sans-serif;
+        margin-right: 0;
+    }
+    
+    footer {
+        max-width: 381px;
+        width: 100%;
+        height: auto;
+        padding: 0.8rem 0;
+        margin-top: 0rem;
+        font-size: 7%;
+        scroll-behavior: auto;
+        transition: all 0px;
+    }
+    footer .links a{
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    footer .card {
+        font-size: 0.5rem;
+        padding: 0rem;
+        margin-top: 0.5rem;
+    }
+    
+    /* akhir contact */
+} 
